@@ -34,9 +34,9 @@ namespace RebusNetCore
             var nomeFila = "fila_rebus";
 
             services.AddRebus(configure => configure
-                .Transport(t => t.UseInMemoryTransport(new InMemNetwork(), nomeFila))
-                //.Transport(t => t.UseRabbitMq("amqp://localhost", nomeFila))
-                .Subscriptions(s => s.StoreInMemory())
+                // .Transport(t => t.UseInMemoryTransport(new InMemNetwork(), nomeFila))
+                .Transport(t => t.UseRabbitMq("amqp://localhost", nomeFila))
+                // .Subscriptions(s => s.StoreInMemory())
                 .Routing(r =>
                 {
                     r.TypeBased()

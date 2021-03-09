@@ -23,3 +23,38 @@ Instrutor:
 Referências:
 
 - https://desenvolvedor.io/curso-online-modelagem-de-dominios-ricos/
+
+<br>
+<br>
+<br>
+
+## Instalação do RabitMQ
+
+- Download/Instalação no Windows
+
+  https://www.rabbitmq.com/download.html
+
+  - Pré-requisito:
+    - [erlang](https://www.erlang.org/downloads)
+
+- Habilitar o Management Plugin [Documentação](https://www.rabbitmq.com/management.html)
+
+  - Ir até o diretório dp instalação
+
+  ```
+  C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.14\sbin
+  ```
+
+  - Abrir o terminal neste local
+
+  - Executar o seguinte comando:
+
+  ```bash
+  rabbitmq-plugins enable rabbitmq_management
+  ```
+
+  - Acesso loclhoast
+
+  ```
+  http://localhost:15672
+  ```
